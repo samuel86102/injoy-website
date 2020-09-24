@@ -44,7 +44,10 @@
         <a class="js-scroll-trigger" href="#features">特色</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">內容</a>
+        <a class="js-scroll-trigger" href="#teachers">師資</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#lessons">課程</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#contact">聯絡</a>
@@ -128,22 +131,69 @@
     </div>
   </section>
 
-  <!-- Callout -->
-  <section class="callout">
+  <!-- Teachers -->
+  <section class="callout" id="teachers">
     <div class="container text-center">
-      <h2 class="mx-auto mb-5">Welcome to
-        <em>your</em>
-        next website!</h2>
-      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/themes/stylish-portfolio/">Download Now!</a>
+      <h2 class="mx-auto mb-5">這是我們的老師</h2>
+      <!--<a class="btn btn-primary btn-xl" href="＃">查看師資</a>-->
+      <button type="button" class="btn btn-primary btn-xl" data-toggle="modal" data-target="#teachers-Modal">
+        查看師資
+       </button>
+
+
     </div>
   </section>
 
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
+
+  <!-- The Teachers Modal -->
+  <div class="modal fade" id="teachers-Modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">師資</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container text-center">
+          <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+              <h3><a href="https://hopechien.netlify.app/">小小老師</a></h3>
+            </li>
+            <li class="list-inline-item">
+              <h3><a href="https://samuelchen.netlify.app/">星星老師</a></h3>
+            </li>
+            </ul>
+          </div>
+
+
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Lessons -->
+  <section class="content-section" id="lessons">
     <div class="container">
       <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
+        <h3 class="text-secondary mb-0">課程</h3>
+        <h2 class="mb-5">熱烈招生中！</h2>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
@@ -199,7 +249,7 @@
     <div class="container text-center">
       <h2 class="mb-4">心動了嗎？趕快報名吧！</h2>
 
-      <button type="button" class="btn btn-xl btn-light mr-4" data-toggle="modal" data-target="#myModal">
+      <button type="button" class="btn btn-xl btn-light" data-toggle="modal" data-target="#contact-Modal">
        聯絡我們
       </button>
       <!--
@@ -210,8 +260,8 @@
   </section>
 
 
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal">
+  <!-- The Contact Modal -->
+  <div class="modal fade" id="contact-Modal">
     <div class="modal-dialog">
       <div class="modal-content">
 
