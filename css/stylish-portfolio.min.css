@@ -4,6 +4,12 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
  body,
  html {
      width: 100%;
@@ -100,20 +106,30 @@
      background-size: cover
  }
 
- @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
-*{
-    font-family: 'Noto Sans TC', sans-serif;
-}
+
  .masthead h1 {     
 
-     font-size: 4rem;
+     font-size: 3rem;
      margin: 0;
      padding: 0;
     
      
  }
 
- /*Medium Sized Devices */
+
+ /*Small Devices*/
+ @media (min-width: 768px) and (max-width: 991px)
+ {
+     .masthead {
+         padding-top: 8rem;
+     }
+     .masthead h1 {
+        font-size: 5rem
+    }
+ }
+
+
+ /*Medium Sized Devices*/
  @media (min-width:992px) {
      .masthead {
          height: 100vh;
@@ -124,6 +140,7 @@
      }
  }
  
+
  #sidebar-wrapper {
      position: fixed;
      z-index: 2;
