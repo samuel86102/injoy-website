@@ -100,9 +100,12 @@
      background-size: cover
  }
 
- 
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+}
  .masthead h1 {     
-
+    font-family: 'Noto Sans TC', sans-serif;
      font-size: 4rem;
      margin: 0;
      padding: 0;
