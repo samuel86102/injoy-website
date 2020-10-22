@@ -4,7 +4,26 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
 
+ 
+ 
+ /*custom sytle*/
+.contact-section ul{
+    list-style: none;
+    padding: 0;
+}
+.contact-section #info {
+    font-size: 1.2rem;
+    text-align: left;
+    
+}
+.contact-section h2{
+    text-align: left;
+}
 
+
+ 
+ 
+ /*default sytle*/
  body,
  html {
      width: 100%;
@@ -12,9 +31,9 @@
  }
  
  body {
-     font-family: 'Source Sans Pro'
- }
+     font-family: 'Source Sans Pro';
  
+ }
  .btn-xl {
      padding: 1.25rem 2.5rem
  }
