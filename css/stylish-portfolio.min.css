@@ -19,7 +19,33 @@
 .contact-section h2{
     text-align: left;
 }
+.card{
+    margin:auto;
+    border-radius:.5rem;
+    padding:2.5rem;
+    width: 20rem;
 
+}
+
+  /*large Devices*/
+  @media (min-width:992px) {
+    #card-samuel{
+        margin-left:auto;
+    }
+    #card-hope{
+        margin-right:auto;
+    }
+
+}
+
+.card-img-top{
+    border-radius:.5rem;
+
+}
+.card ul{
+    list-style: none;
+    text-align: center;
+}
 
  
  
@@ -130,7 +156,7 @@
  }
 
 
- /*Small Devices*/
+ /*medium Devices*/
  @media (min-width: 768px) and (max-width: 991px)
  {
      .masthead {
@@ -142,7 +168,7 @@
  }
 
 
- /*Medium Sized Devices*/
+ /*large Devices*/
  @media (min-width:992px) {
      .masthead {
          height: 100vh;
