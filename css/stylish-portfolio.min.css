@@ -20,7 +20,7 @@
     text-align: left;
 }
 .card{
-    margin:auto;
+    
     border-radius:.5rem;
     /*padding:2.5rem;*/
     width: 20rem;
@@ -31,10 +31,17 @@
   /*large Devices*/
   @media (min-width:992px) {
     #card-samuel{
-        margin-left:auto;
+        margin-left:auto!important;
     }
     #card-hope{
-        margin-right:auto;
+        margin-right:auto!important;
+    }
+
+}
+
+  @media (max-width:991px) {
+    .card{
+        margin:auto;
     }
 
 }
