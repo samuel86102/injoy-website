@@ -13,13 +13,13 @@
 }
 .contact-section #info {
     font-size: 1.2rem;
-    text-align: left;
+    text-align: center;
     
 }
 .contact-section h2{
-    text-align: left;
+    text-align: center;
 }
-.card{
+#teachers .card{
     
     border-radius:.5rem;
     /*padding:2.5rem;*/
@@ -40,7 +40,7 @@
 }
 
   @media (max-width:991px) {
-    .card{
+    #teachers .card{
         margin:auto;
     }
 
