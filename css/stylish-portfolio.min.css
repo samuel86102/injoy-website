@@ -58,15 +58,14 @@
  
  
  /*default sytle*/
- body,
+
  html {
      width: 100%;
      height: 100%
  }
  
  body {
-     font-family: 'Source Sans Pro';
- 
+    font-family: 'Noto Sans TC', sans-serif;
  }
  .btn-xl {
      padding: 1.25rem 2.5rem
