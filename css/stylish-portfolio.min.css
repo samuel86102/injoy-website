@@ -155,12 +155,20 @@
 
  .masthead h1 {     
 
-     font-size: 3rem;
+     font-size: 2.5rem;
      margin: 0;
      padding: 0;
     
      
  }
+
+ .masthead h3 {     
+
+    font-size: 1.25rem;
+
+   
+    
+}
 
 
  /*medium Devices*/
@@ -171,6 +179,9 @@
      }
      .masthead h1 {
         font-size: 5rem
+    }
+    .masthead h3 {
+        font-size: 1.75rem
     }
  }
 
@@ -184,6 +195,9 @@
      .masthead h1 {
          font-size: 5.5rem
      }
+     .masthead h3 {
+        font-size: 1.75rem
+    }
  }
  
 
