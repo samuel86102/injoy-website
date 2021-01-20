@@ -1,18 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="123123123">
   <meta name="author" content="">
-  
- <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
-  <script language="javascript" type="text/javascript" src="sketch_201006b.js"></script>
-    <style> body { padding: 0; margin: 0; } </style>
-  
+
   <title>InJoy快樂家教班</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
   <!-- Bootstrap Core CSS -->
@@ -20,52 +16,394 @@
 
   <!-- Custom Fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">-->
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">        
+
 </head>
+
+
+<style> 
+		.fx { 
+			animation: fadeInAnimation ease 2s; 
+			animation-iteration-count: 1; 
+			animation-fill-mode: forwards; 
+		} 
+		@keyframes fadeInAnimation { 
+			0% { 
+				opacity: 0; 
+				padding-top:10%;
+				
+			} 
+			100% { 
+				opacity: 1; 
+				padding-top:auto;
+				
+			} 
+		} 
+</style> 
+
+
+
+
+
+
+
+
+
+
+
 
 <body id="page-top">
 
-  
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">InJoy快樂家教班</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">首頁</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#lessons">課程</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#teachers">師資</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#features">聯絡</a>
+      </li>
+
+    </ul>
+  </nav>
+
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
 
-      <div class="container col-md-10">
+            <div class="container col-md-10">
 
+<div class="fx">
+            <div class="row ">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                        <img style="width:10em;" class="mb-3" src="img/logo.png">
+                    </div>
+                    
+                    <div class="col-xl-10 col-lg-9 col-md-8 col-sm-7 ">
+                        <h1 class="mb-3"><b>InJoy快樂家教班</b></h1>
+                        <h3 class="mb-5">
+                            <em>讓孩子在快樂中學習，在學習中成長</em>
+                        </h3>
+                    </div>
+                
+            </div>
 
-        <div class="row">
-          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
-            <h1 class="mb-3"><i class="fas fa-wrench"></i>
-            </h1>
-          </div>
-          <div class="col-xl-10 col-lg-9 col-md-8 col-sm-7">
-            <h1 class="mb-3">網站架設中</h1>
-            <h3 class="mb-5">
-              <em>Coming Soon!</em>
-            </h3>
-          </div>
-          
-        </div>
-
-    </div>
-
-
-
-
-
-      
-      
-    </div>
+            </div>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#lessons">了解更多</a>
+            </div>
+ </div>  
     <div class="overlay"></div>
   </header>
 
+ <!-- Lessons -->
+ <section class="content-section" id="lessons">
+  <div class="container">
+    <div class="content-section-heading text-center">
+      <h3 class="text-secondary mb-0">系列課程</h3>
+      <h2 class="mb-5">熱烈招生中！</h2>
+    </div>
+
+    <div class="row no-gutters">
+
+
+
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#!">
+          <div class="caption">
+            <div class="caption-content">
+              <div class="h2">程式設計班</div>
+              <p class="mb-0">一期8堂/每周一堂共兩個月</br>國中</p>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/cs.png" alt="">
+        </a>
+      </div>
+      
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#!" data-toggle="modal" data-target="#EngModal">
+          <div class="caption">
+            <div class="caption-content">
+              <div class="h2">快樂英文班</div>
+              <p class="mb-0">1季4期/1期6堂/每週1堂<br/>
+              1堂1小時只要350/TWD
+
+              
+              </p>
+            </div>
+          </div>
+          <img class="img-fluid" src="img/eng.png" alt="">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
   
+ <!-- Eng Modal -->
+  <div class="modal fade" id="EngModal">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">快樂英文班</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>第一堂支付教材費350/TWD，一本教材可用4季以上!!!!
+            <br/>
+            線上教課、教材宅配到府
+            <br/>
+            每堂課10多句會話練習、5~10個專業單字背誦
+            <br/>
+            增添原創電繪與故事內容，提升學習趣味性
+            <br/>
+            依孩童能力調整，尊重孩童需求，讓孩童輕鬆快樂學習對話。
+            <br/>
+            「我們不是死背班，不打分數、不以能力高低評量孩童，讓孩子在對話練習與運用中，自然熟習英文形成能力。」
+          </p>
+          
+          <p>
+          <b>教學課程</b>
+          <br/>
+            第一季 家庭生活實用會話
+            <br/>
+            第一季第一期
+            <br/>
+            Lesson 1 起床會話
+            <br/>
+            Lesson 2 晨間與出門對話、招呼
+            <br/>
+            Lesson 3 早晨洗嗽會話
+            <br/>
+            Lesson 4 如廁會話
+            <br/>
+            Lesson 5 早餐與用餐禮儀
+            <br/>
+            Lesson 6 總結統整
+          
+          </p>
+          
+          
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+    
+          <button type="button" class="btn btn-danger " data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Teachers -->
+  <section class="callout" id="teachers">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">我們的老師</h2>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+
+            <div class="card bg-primary text-white" id="card-samuel">
+              <img class="card-img-top" src="img/samuel.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">新新老師</h5>
+                <p class="card-text">
+                  理化班
+                  <br/>
+                  程式設計班
+                  <br/>
+                </p>
+                <a href="https://samuelchen.netlify.app/" class="btn btn-light">查看檔案</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+            <div class="card bg-primary text-white" id="card-hope">
+              <img class="card-img-top" src="img/hope.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">小小老師</h5>
+                <p class="card-text">
+                  品格繪本班
+                  <br/>
+                  英文閱讀班
+                  <br/>
+                </p>
+                <a href="https://hopechien.netlify.app/" class="btn btn-light">查看檔案</a>
+              </div>
+            </div>
+          </div>
+
+    
+        </div>
+      
+
+      <!--<a class="btn btn-primary btn-xl" href="＃">查看師資</a>-->
+      <!--
+      <a href="https://hopechien.netlify.app/" target="_blank" class="btn btn-xl btn-light mr-2 ml-2 mb-2">小小老師</br>
+        <i class="far fa-hand-point-right"></i>點擊看檔案</a>
+      <a href="https://samuelchen.netlify.app/" target="_blank" class="btn btn-xl btn-dark mr-2 ml-2 mb-2">新新老師</br>
+        <i class="far fa-hand-point-right"></i>點擊看檔案</a>
+      -->
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Features -->
+  <section class="content-section bg-primary text-white text-center" id="features">
+    <div class="container">
+      <div class="content-section-heading">
+        <!--
+        <h2 class="mb-5 text-secondary">我們的特色</h2>
+        -->
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="far fa-smile"></i>
+          </span>
+          <h4>
+            <strong>快樂</strong>
+          </h4>
+          <!--
+          <p class="text-faded mb-0">Looks great on any screen size!</p>
+          -->
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-pencil-alt"></i>
+          </span>
+          <h4>
+            <strong>學習</strong>
+          </h4>
+          <!--
+          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          -->
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-seedling"></i>
+          </span>
+          <h4>
+            <strong>成長</strong>
+          </h4>
+          <!--
+          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          -->
+        </div>
+
+        <div class="col-lg-6 col-md-6 mb-5 mb-md-0 contact-section card bg-primary">
+          <h2 class="text-secondary mb-4 mt-4">聯絡我們報名課程！</h2>
+          <div id="info">
+            <ul>
+              <li>
+                <i class="fab fa-line mr-2"></i>
+                <b>@935vohvu</b>
+              </li>
+              
+              <li>
+                <i class="fas fa-envelope mr-2"></i>
+                <b><a style="text-decoration: none; color:white;" href="mailto:17learninjoy@gmail.com">17learninjoy@gmail.com</a></b>
+              </li>
+              
+              <li>
+                <i class="fas fa-phone mr-2"></i>
+                <b><a style="text-decoration: none;color:white;" href="tel:0939815119">0939815119</a></b>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+    
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  
+
+
  
+
+ 
+  <!-- The Contact Modal -->
+  <div class="modal fade" id="contact-Modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">聯絡我們</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="h5">
+            <ul style="list-style: none;">
+              <li><i class="fab fa-line mr-2"></i><b>@935vohvu</b></li>
+              <li><i class="fas fa-envelope mr-2"></i><b><a href="mailto:17learninjoy@gmail.com">17learninjoy@gmail.com</a></b></li>
+              <li><i class="fas fa-phone mr-2"></i><b><a href="tel:0939815119">0939815119</a></b></li>
+
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
 
 
 
@@ -73,28 +411,10 @@
   
   <footer class="footer text-center">
     <div class="container">
-      <!--
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-      </ul>
-    -->
-      <p class="text-muted small mb-0">InJoy快樂家教班 2020<br/>
-        17learninjoy@gmail.com<br/>
-        0939815119
+       <p class="text-muted small mb-0">InJoy快樂家教班 2020<br/>
+        17learninjoy@gmail.com</br>
+        0939815119</br>
+        <a href="LICENSE">LICENSE</a>
       </p>
     </div>
   </footer>
@@ -104,6 +424,7 @@
   <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
