@@ -10,24 +10,122 @@
         <link rel="stylesheet" href="dist/reveal.css" />
         <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
 
+        <!-- fontawesome icon-->
+        <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+
         <!-- Theme used for syntax highlighted code -->
         <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme" />
     </head>
+
+    <style>
+        .item {
+            padding-bottom: 1.5rem;
+        }
+    </style>
+
     <body>
         <div class="reveal">
             <div class="slides">
-                <section data-background-color="#ecb807" data-auto-animate><img data-src="img/logo.png" /></section>
+                <section data-background-color="#1d809f" data-auto-animate></section>
+
+                <section data-background-color="#1d809f" data-auto-animate><img data-src="img/logo.png" /></section>
+
                 <section data-background-color="#ecb807" data-auto-animate>
                     <img data-src="img/logo.png" />
                     <h2>InJoy快樂家教班</h2>
                 </section>
+                
+                
+                <section data-background-color="#1d809f">
+                    <section data-auto-animate>
+                        <h2>
+                            教學特色
+                        </h2>
+                    </section>
+                    <section data-auto-animate>
+                        <h2 style="color: #ecb807;">教學特色</h2>
 
+                        <div data-id="box1" class="item">
+                            <i class="fas fa-laptop fa-fw" aria-hidden="true"></i>
+                            線上教學
+                        </div>
+                    </section>
+
+                    <section data-auto-animate>
+                        <h2 style="color: #ecb807;">教學特色</h2>
+
+                        <div data-id="box1" class="item">
+                            <i class="fas fa-laptop fa-fw" aria-hidden="true"></i>
+                            線上教學
+                        </div>
+
+                        <div data-id="box2" class="item">
+                            <i class="fas fa-chalkboard-teacher fa-fw" aria-hidden="true"></i>
+                            互動內容
+                        </div>
+                    </section>
+
+                    <section data-auto-animate>
+                        <h2 style="color: #ecb807;">教學特色</h2>
+
+                        <div data-id="box1" class="item">
+                            <i class="fas fa-laptop fa-fw" aria-hidden="true"></i>
+                            線上教學
+                        </div>
+
+                        <div data-id="box2" class="item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            互動內容
+                        </div>
+                        <div data-id="box3" class="item">
+                            <i class="fas fa-laugh-beam fa-fw" aria-hidden="true"></i>
+                            快樂學習
+                        </div>
+                    </section>
+                </section>
+                
+                
+                
+                <section data-background-color="#1d809f">
+                    <section data-auto-animate>
+                        <h2>
+                            現正開課
+                        </h2>
+                    </section>
+                    <section data-auto-animate>
+                        <h2 style="color: #ecb807;">現正開課</h2>
+
+                        <div data-id="box1" class="item">
+                           
+                            快樂生活英文班
+                        </div>
+                    </section>
+
+                    <section data-auto-animate>
+                        <h2 style="color: #ecb807;">現正開課</h2>
+
+                        <div data-id="box1" class="item">
+                           
+                            快樂生活英文班
+                        </div>
+
+                        <div data-id="box2" class="item">
+                            
+                            程式設計班
+                        </div>
+                    </section>
+
+                   
+                </section>
+
+
+                <!--
                 <section data-background-color="#1d809f">
                     <section data-auto-animate>
                         <h2>快樂生活英文班</h2>
                     </section>
                     <section data-auto-animate>
-                        <h2 style="color:#ecb807;">快樂生活英文班</h2>
+                        <h2 style="color: #ecb807;">快樂生活英文班</h2>
                         <ul>
                             <li><b>聽、說　日常會話與日常實用單字</b>。</li>
                             <li>運用<b>英文卡通、影片</b>，提升<b>學習趣味性</b>。</li>
@@ -37,7 +135,7 @@
                     </section>
 
                     <section data-auto-animate>
-                    <h2 style="color:#ecb807;">快樂生活英文班</h2>
+                        <h2 style="color: #ecb807;">快樂生活英文班</h2>
                         <ul>
                             <li>教學重點專注於<b>聆聽、發音、了解意義與實際運用</b>。</li>
                             <li>教學主旨期待孩童聽完發音後，便能講出相對的中文意思，而不是單詞的逐字背誦。</li>
@@ -47,20 +145,22 @@
                     </section>
                 </section>
 
-                <section data-background-color="#1d809f" >
+                <section data-background-color="#1d809f">
                     <section data-auto-animate>
                         <h2>程式設計班</h2>
                     </section>
 
                     <section data-auto-animate>
-                    <h2 style="color:#ecb807;">程式設計班</h2>
-                    
+                        <h2 style="color: #ecb807;">程式設計班</h2>
+
                         <p>
                             國小：Scratch專案實做<br />
                             國中：Python程式設計<br />
                         </p>
                     </section>
                 </section>
+
+                -->
 
                 <section data-background-color="#ecb807">
                     <h2>聯絡我們</h2>
@@ -71,7 +171,7 @@
                     <h2>了解更多</h2>
 
                     <img data-src="img/injoy.png" width="30%" /><br />
-                    <a href="https://www.17learninjoy.com">https://www.17learninjoy.com</a>
+                    <a href="https://www.17learninjoy.com" style="color: white;">17learninjoy.com</a>
                 </section>
             </div>
         </div>
@@ -86,7 +186,9 @@
             // - https://revealjs.com/config/
             Reveal.initialize({
                 hash: true,
-
+                controlsLayout: 'edges',
+                 controls: false,
+                  progress: false,
                 // Learn about plugins: https://revealjs.com/plugins/
                 plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
             });
